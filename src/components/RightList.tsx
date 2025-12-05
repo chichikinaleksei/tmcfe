@@ -110,7 +110,7 @@ export function RightList() {
   }
 
   return (
-    <Stack gap="xs" style={{ height: "100%" }}>
+    <Stack spacing="xs" style={{ height: "100%" }}>
       <div style={{ fontSize: 13, opacity: 0.7, marginBottom: 15 }}>
         Loaded {items.length} of {total ?? 0}
       </div>
@@ -125,7 +125,7 @@ export function RightList() {
             items={items.map((x) => x.id)}
             strategy={verticalListSortingStrategy}
           >
-            <Stack gap="xs" style={{ paddingBottom: 50 }}>
+            <Stack spacing="xs" style={{ paddingBottom: 50 }}>
               {items.map((it) => (
                 <SortableItem key={it.id} id={it.id} />
               ))}

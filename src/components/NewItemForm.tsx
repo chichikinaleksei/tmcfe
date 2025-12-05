@@ -64,7 +64,7 @@ export function NewItemForm() {
 
 
   return (
-    <Group align="end" gap="xs">
+    <Group align="end" spacing="xs">
       <TextInput
         label="Add new ID"
         placeholder="Enter any number"

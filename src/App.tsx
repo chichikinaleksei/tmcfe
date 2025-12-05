@@ -6,12 +6,11 @@ import { NewItemForm } from './components/NewItemForm';
 export default function App() {
   return (
     <Container size="xl" style={{ marginTop: 30 }}>
-      <Stack gap="lg">
+      <Stack spacing="lg">
         <Title order={2} align="center">
           Dual List with Infinite Scroll & Drag/Drop
         </Title>
 
-        {/* Форма добавления нового ID */}
         <NewItemForm />
 
         <Grid gutter="lg">

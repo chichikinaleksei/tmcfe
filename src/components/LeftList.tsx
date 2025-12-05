@@ -94,7 +94,7 @@ export function LeftList() {
   }, []);
 
   return (
-    <Stack gap="sm" style={{ height: "100%" }}>
+    <Stack spacing="sm" style={{ height: "100%" }}>
       <TextInput
         placeholder="Filter by ID..."
         value={filter}
@@ -102,7 +102,7 @@ export function LeftList() {
       />
 
       <ScrollArea style={{ flex: 1 }}>
-        <Stack gap="xs">
+        <Stack spacing="xs">
           {items.map((it) => (
             <Button
               variant="light"
